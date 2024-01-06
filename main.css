@@ -1,0 +1,46 @@
+.links{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.links .link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.links .link .link_icon{
+    rotate: 180deg;
+    animation: scale 1s infinite;
+}
+.links .link:nth-child(2) .link_icon{
+   animation-delay: 0.5s;
+}
+.links .link .link_icon svg{
+    width: 30px;
+    height: 30px;
+    fill:#fff;
+}
+.links .link a{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+@keyframes scale {
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
